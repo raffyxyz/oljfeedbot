@@ -1,0 +1,12 @@
+name = "job-feed-notifier"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Hourly, on the hour (UTC). Quiet hours are enforced in code (Asia/Manila).
+[triggers]
+crons = ["0 * * * *"]
+
+[[kv_namespaces]]
+binding = "SEEN_JOBS"
+id = "15fb7cc3343844ffb3d7c859dd2d6a7c"

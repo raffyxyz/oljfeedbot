@@ -1,0 +1,22 @@
+{
+  "name": "job-feed-notifier",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261005.1",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.147.0"
+  }
+}
